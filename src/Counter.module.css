@@ -1,0 +1,28 @@
+.textareaDefolt {
+  text-align: center;
+  width: 50px; 
+  height: 20px;
+  margin-top: 15px;
+}
+
+.textareaWarn {
+  border: 2px solid orange
+}
+
+.mainDiv {
+   margin: 20px;
+   display: inline-block;
+   border: 2px solid blue; 
+   width: 200px;
+   height: 160px;
+}
+
+.input {
+  width:30px; 
+  text-align: center;
+}
+
+.spanWarn {
+  color:orange;
+  display:block
+}
