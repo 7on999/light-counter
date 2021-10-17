@@ -1,7 +1,6 @@
 import React from 'react';
 import s from './Counter.module.css';
 import SuperButton from './SuperButton/SuperButton';
-import useLocalStorage from './useLocalStorage';
 import SuperInput from './InputLimit/InputLimit';
 import WarnTittle from './DangerTittle/DangerTittle'
 
@@ -27,7 +26,7 @@ const Counter = ({ count, realLimitTop, warnExtremeBottomValue,
   return (
     <>
       <div className={s.mainDiv} >
-        <textarea value={count} className={`${s.textareaDefolt} ${count === realLimitTop || 
+        <textarea value={count} read-only='true' className={`${s.textareaDefolt} ${count === realLimitTop || 
           warnExtremeBottomValue ? s.textareaWarn : ''}`} />
         <div>
           <SuperButton onClick={increaseCount} disabled={count === realLimitTop} tittle={'+'} />
